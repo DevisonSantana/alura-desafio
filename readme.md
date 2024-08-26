@@ -1,3 +1,4 @@
-#PROJETO ALURA
+# PROJETO ALURA
 
-Encripta e Desencripta
+O site cria uma mensagem criptografada usando um simples metodo de criptografia
+possibilitando a troca de mensagens secretas.

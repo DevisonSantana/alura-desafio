@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/alura-fav-ico.png" type="image/x-icon">
+    <script src="./javascript/script.js" defer></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img id="logo_alura" src="./images/logo-alura.png" alt="logo da alura">
+    </header>
+    <main id="content">
+        <section id="container__area_text">
+            <textarea id="write_area" placeholder="Digite seu texto"></textarea>
+            <div id="info">
+                <img src="./images/exclamation.png" alt="">
+                <p>Apenas letras minúsculas e sem acentos</p>
+            </div>
+            <div id="button_area">
+                <button class="btn" id="code" onclick="code()">Criptografar</button>
+                <button class="btn" id="decode" onclick="decode()">Descriptografar</button>
+            </div>
+        </section>
+    
+        <section id="container__area_message">
+            <img src="./images/prototype-alura.png" alt="Não foram encontradas mensagens">
+            <h6>Nenhuma mensagem encontrada</h6>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f3f5fc;
+}
+
+#logo_alura {
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 100px;
+}
+
+#content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#write_area {
+    border: none;
+    color: #0a3871;
+    height: 360px;
+    width: 100%;
+    line-height: 150%;
+    font-size: 26px;
+    text-transform: lowercase;
+    background-color: inherit;
+    resize: none;
+}
+
+#write_area:focus {
+    outline: none;
+}
+
+#write_area::placeholder {
+    color: #0a3871;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex-wrap: nowrap;
+}
+
+#info img {
+    height: 12px;
+    width: auto;
+}
+
+#info p {
+    font-size: 13px;
+}
+
+#button_area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+.btn {
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 24px;
+}
+
+#code {
+    color: #fff;
+    background-color: #072b61;
+    transition: .5s ease;
+}
+
+#code:hover {
+    background-color: #166107;
+}
+
+#decode {
+    color: #072b61;
+    background-color: #d8dfe8;
+    transition: .5s ease;
+}
+
+#decode:hover {
+    color: #fff;
+    background-color: #166107;
+}
+
+#container__area_message {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    color: #343a40;
+    background-color: #fff;
+}
+
+#container__area_message img {
+    width: 250px;
+    height: auto;
+}
+
+#container__area_message h6 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#container__area_message p {
+    font-size: 14px;
+    text-align: center;
+}
+
+#message_area {
+    height: 360px;
+    width: 90%;
+    border: none;
+    color: #0a3871;
+    line-height: 150%;
+    font-size: 26px;
+    resize: none;
+}
+
+#message_area:focus {
+    outline: none;
+}
+
+#copy {
+    color: #0a3871;
+    background-color: #d8dfe8;
+    transition: .5s ease;
+}
+
+#copy:hover {
+    color: #fff;
+    background-color: #072b61;
+}

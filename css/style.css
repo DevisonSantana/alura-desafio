@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -9,9 +10,8 @@ body {
 }
 
 #logo_alura {
-    margin-left: 10px;
-    padding-top: 10px;
-    width: 100px;
+    margin: 1rem;
+    width: 5.5rem;
 }
 
 #content {
@@ -20,13 +20,22 @@ body {
     flex-wrap: wrap;
 }
 
+#container__area_text {
+    width: 45rem;
+    height: auto;
+}
+
+section {
+    border: 2px solid #00f;
+}
+
 #write_area {
     border: none;
     color: #0a3871;
-    height: 360px;
+    height: 25.8rem;
     width: 100%;
     line-height: 150%;
-    font-size: 26px;
+    font-size: 1.6rem;
     text-transform: lowercase;
     background-color: inherit;
     resize: none;
@@ -43,29 +52,28 @@ body {
 #info {
     display: flex;
     align-items: center;
-    gap: 3px;
     flex-wrap: nowrap;
+    gap: 3px;
+    margin: .3rem;
 }
 
 #info img {
-    height: 12px;
+    height: .8rem;
     width: auto;
 }
 
 #info p {
-    font-size: 13px;
+    font-size: .8rem;
 }
 
 #button_area {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 10px;
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .btn {
-    width: 300px;
-    height: 50px;
+    width: 18rem;
+    height: 3.4rem;
     cursor: pointer;
     border: none;
     border-radius: 24px;
@@ -93,14 +101,15 @@ body {
 }
 
 #container__area_message {
-    width: 350px;
-    height: 500px;
+    width: 20rem;
+    height: auto;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     border-radius: 24px;
     color: #343a40;
+    box-shadow: 5px 5px 12px -8px #181818;
     background-color: #fff;
 }
 
@@ -111,21 +120,21 @@ body {
 
 #container__area_message h6 {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 #container__area_message p {
-    font-size: 14px;
+    font-size: .9rem;
     text-align: center;
 }
 
 #message_area {
-    height: 360px;
+    height: 80%;
     width: 90%;
     border: none;
     color: #0a3871;
     line-height: 150%;
-    font-size: 26px;
+    font-size: 1.3rem;
     resize: none;
 }
 

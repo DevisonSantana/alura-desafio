@@ -17,16 +17,11 @@ body {
 #content {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 #container__area_text {
     width: 45rem;
     height: auto;
-}
-
-section {
-    border: 2px solid #00f;
 }
 
 #write_area {
@@ -111,10 +106,11 @@ section {
     color: #343a40;
     box-shadow: 5px 5px 12px -8px #181818;
     background-color: #fff;
+    gap: .5rem;
 }
 
 #container__area_message img {
-    width: 250px;
+    width: 18rem;
     height: auto;
 }
 
@@ -151,4 +147,82 @@ section {
 #copy:hover {
     color: #fff;
     background-color: #072b61;
+}
+
+@media (max-width: 1050px) {
+    #logo_alura {
+        margin: .7rem;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #container__area_text {
+        width: 95%;
+    }
+    
+    #write_area {
+        height: 25rem;
+    }
+    #button_area {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .btn {
+        width: 18rem;
+        height: 3.4rem;
+    }
+
+    #container__area_message {
+        width: 95%;
+        height: fit-content;
+        gap: .3rem;
+    }
+    
+    #container__area_message img {
+        display: none;
+    }
+    
+    #container__area_message h6 {
+        margin-top: 1rem;
+    }
+
+    #container__area_message p {
+        margin-bottom: 1rem;
+    }
+    
+    #message_area {
+        height: 13rem;
+        width: 90%;
+        line-height: 150%;
+    }
+}
+
+@media (max-width: 425px) {
+    #logo_alura {
+        margin: .1rem;
+        width: 4rem;
+    }
+
+    #write_area {
+        height: 25rem;
+    }
+
+    #button_area {
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    #message_area {
+        height: 23rem;
+    }
 }
